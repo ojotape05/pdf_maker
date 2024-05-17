@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        html {
+            font-family: Helvetica, Arial;
+        }
+
+        .header_infos {
+            font-size: 15px;
+            text-align: center;
+            /* Centralizar texto horizontalmente */
+        }
+
+        .header_infos p {
+            margin: 4px;
+            /* Adicionando 'px' para a margem */
+        }
+
+        .header_infos span {
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 796px; margin: 0 auto; background: white; padding: 20px;">
+        <div style="display: flex;">
+
+            <div style="display: flex;width: 25%;text-align: center;">
+                <img style="width: 105px; height: 51px;" src="Remove-bg.ai_1715864425742.png">
+            </div>
+            <div
+                style="display:flex;width: 50%;margin-top: 20px;font-size: 17px;font-weight: 600;justify-content: center;align-items: center;">
+                PAGAMENTO AO VENDEDOR</div>
+            <div style="display: flex;width: 25%;flex-direction: column;align-items: flex-end;justify-content: center;">
+                <div style="color: #888888; font-size: 9px; margin-top: 10px;">Situação: TED Enviada</div>
+            </div>
+
+
+        </div>
+
+
+        <div
+            style="margin-top: 20px;display: flex; justify-content: space-around; background-color: #DFDFDF; padding: 10px;">
+            <div class="header_infos">
+                <p><b>ID Da Operação</b></p>
+                <span>${id}</span>
+            </div>
+            <div class="header_infos">
+                <p><b>Mutuário</b></p>
+                <span>${mutuario}</span>
+            </div>
+            <div class="header_infos">
+                <p><b>Contrato</b></p>
+                <span>${contrato}</span>
+            </div>
+            <div class="header_infos">
+                <p><b>Data do Crédito</b></p>
+                <span>${dt_envio}</span>
+            </div>
+        </div>
+        <div style="margin-top: 20px; font-size: 15px; font-weight: 600;">Detalhamento</div>
+        <div style="border: 1px #848484 solid; margin-top: 10px;"></div>
+        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+            <div style=" display: flex; flex-direction: column; gap: 15px;">
+
+                <div style="display: flex; flex-direction: column;">
+                    <div><b>Valor Financiado:</b> R$ ${valor_financiado}</div>
+                    <div><b>Valor Financiado Corrigido:</b> R$ ${valor_financiado_corrigido}</div>
+                </div>
+                
+                <div style="display: flex; flex-direction: column;">
+                    <div><b>Valor FGTS:</b> R$ ${valor_fgts}</div>
+                    <div><b>Valor FGTS Corrigido:</b> R$ ${valor_fgts_corrigido}</div>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <div><b>Valor IQ:</b> R$ ${valor_iq}</div>
+                    <div><b>Data do IQ:</b> ${dt_iq}</div>
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                    <div><b>Valor das Custas:</b> R$ ${valor_custas}</div>
+                </div>
+
+            </div>
+
+            <div style="display: flex; flex-direction: column;">
+                <div><b>Correspondente:</b> </div>
+                <span>${correspondente}</span>
+                <div style="margin-top: 5px"><b>Agência:</b> ${agencia}</div>
+                <div style="font-size: 15px; font-weight: 400; margin-top: 50px;"><b> TED:</b> R$ ${valor_ted}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
